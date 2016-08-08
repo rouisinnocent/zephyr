@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang='en_US'>
+
+<head>
+    <!-- Metadata -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta charset='utf-8'>
+    <title>Seed</title>
+    <!-- External Styles -->
+    <!-- Styles -->
+    <link rel='stylesheet' href='/css/index.css'>
+</head>
+
+<body>
+    Hello world.
+    <!-- External Scripts -->
+    <script src='systemjs/systemjs.min.js'></script>
+    <!-- Scripts -->
+    <script>
+        System.config({
+            packages: {
+                '/': {
+                    main: '/js/index.js',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('.');
+    </script>
+</body>
+
+</html>
